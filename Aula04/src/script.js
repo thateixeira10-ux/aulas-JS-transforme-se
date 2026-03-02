@@ -35,7 +35,3 @@ let texto = 'Ela não te quer mais';
 if (idade >=22) {
     
 }
-// Exemplo de if aninhado
-let idade2 = 16;
-let pais = 'estados unidos';
-let mensagem = 'voce não pode dirigir';
