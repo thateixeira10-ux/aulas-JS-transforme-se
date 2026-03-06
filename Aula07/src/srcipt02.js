@@ -1,55 +1,49 @@
-// Exemplo de utilização do length em string
-let texto = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-let tamanho = texto.length;
+// Utilização do método charAt()
+let texto = "Abacate";
+let exCharAt = texto.charAt(1);
 
-const elemento = document.querySelector('.ex1');
+console.log(exCharAt);
 
-elemento.innerHTML = tamanho;
+// Utilização do metodo charCodeAt()
+let exCharcodeAt = texto.charCodeAt(6);
+console.log(exCharcodeAt);
 
-// Exemplo de utilização de caractere de escape
-let texto2 = 'Somente a dor \'coletiva\' gera a união.';
+// Utilização do método codePointAt()
+let exCodePointAt = texto.codePointAt(6);
+console.log(exCodePointAt);
 
-let texto3 = "Somente a dor \"coletiva\" gera a união;";
+//Utilização do método at()
+let exAt = texto.at(6);
+let exAtComoArray = texto(2);
+console.log(exAt);
+console.log(exAtComoArray);
 
-let texto4 = "Somente a dor \\ coletiva gera a união.";
+// Utilização do método concat()
+let texto2 = "Verde";
+let texto3 = texto.concat(" ",texto2);console.log9(texto3)
 
-console.log(texto2);
-console.log(texto3);
-console.log(texto4);
+// Utilização do método slice()
+let frutas = "Banana, Maçã e Uva";
+let exSlice = frutas.slice(2);
+console.log(exSlice);
 
-// Exemplo de template string
-let nome = "Thalison Guilherme Teixeira Natalino";
-let idade = 22;
-let frase = `Meu nome é ${nome} e tenho ${idade} anos.`;
+// Utilização de toUpperCase() e toLowercase
+let carro = "Camaro SS";
+let carro2 = "Impala";
 
-let frase2 = "Meu nome é " + nome + "e tenho " + idade + "anos"
+let exLowerCase = carro2.toLowerCase();
+let exUpperCase = carro.toUpperCase();
 
-console.log(frase)
+console.log(exLowerCase);
+console.log(exUpperCase);
 
-// Exemplo de adição de HTML com template string em JS
-const elemento2 = document.querySelector('.ex2');
-console.log(elemento2);
+// Utilização do método isWellFormed()
+let saudacao = "Olá, seja Bem-Vindo!";
+let exWellFormed = saudacao.isWellFormed();
 
-elemento2.innerHTML = `
-<style>
-    .container {
-    justify-content: center;
-    display: flex;
-    gap: 20px;
-    background-color: orangered;
-    }
+console.log(exWellFormed);
 
-    .container div{
-    text-align: center;
-    color: darkgreen;
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-    }
-</style>
-    <div class="container">
-    <div>Item 1</div>
-    <div>Item 2</div>
-    <div>Item 3</div>
-    </div>
-`;
+// Utilização do método trim()
+let Thalison = "            O Thalison gosta do Corinthians"
+let exTrim = Thalison.trim();
+console.log(exTrim);
