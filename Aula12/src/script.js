@@ -6,9 +6,9 @@ function Pessoa(primeiroNome, ultimoNome, idade, pais) {
   this.pais = pais;
 }
 
-const euMesmo = new Pessoa("Richard", "Oliveira", 19, "Brasil");
+const euMesmo = new Pessoa("Thalison", "Guilherme", 22, "Brasil");
 
-const meuIrmao = new Pessoa("Howard", "Rick", 5, "Brasil");
+const meuIrmao = new Pessoa("Chloe", "Teixeira", 5, "Brasil");
 
 // console.log(euMesmo);
 // console.log(meuIrmao);
